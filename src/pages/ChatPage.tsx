@@ -75,29 +75,19 @@ const ChatPage: React.FC = () => {
         'descente': [
             {
                 triggers: ['descente', 'le coq', 'sportif', 'umbro'],
-                answer: "At **Descente & Le coq sportif Korea**, I worked on the **Sport bag project** and designed **UX for Umbro goalkeeper gloves**.",
-                contentType: 'projects_brief',
-                data: [
-                    { id: 101, title: "Sport Bag Project", category: "Product Design", color: "#1a1a1a" },
-                    { id: 102, title: "Umbro Goalkeeper Gloves", category: "UX/Product Design", color: "#1a1a1a" }
-                ]
+                answer: "At **Descente & Le coq sportif Korea**, I worked as a Product Design Intern. My key contributions included leading the **Sport bag project** and designing the **UX for Umbro goalkeeper gloves**.",
             }
         ],
         'designroad': [
             {
                 triggers: ['designroad', 'product designer', '3d print', 'car interior'],
-                answer: "At **Designroad**, I worked on **industrial product design, 3D printing design, and automotive interior design**.",
-                contentType: 'projects_brief',
-                data: [
-                    { id: 103, title: "Industrial Product Design", category: "Product Design", color: "#333" },
-                    { id: 104, title: "3D Printing & Automotive Interior", category: "Automotive Design", color: "#333" }
-                ]
+                answer: "At **Designroad**, I worked as a Product Designer where I focused on **industrial product design**, **3D printing design**, and **automotive interior design**.",
             }
         ],
         'citroen': [
             {
                 triggers: ['citroen', 'citroën', 'psa', 'prolab', 'paris', 'france', 'autonomous', 'light design'],
-                answer: "At **PSA Citroën Prolab** (2019) in Paris, I worked as a Designer on next-generation light design and autonomous car UX. I proposed gesture control systems using smartwatches for autonomous vehicles.",
+                answer: "At **PSA Citroën Prolab** (2019) in Paris, I worked on the **CITROËN EXPERIENCE**. I designed the **Gesture Control: Citroën Autonomous HMI**, proposing a new driver interaction model using smartwatches.",
                 contentType: 'projects_brief',
                 data: [allProjects[6]]
             }
