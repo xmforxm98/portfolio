@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Sparkles, Linkedin, Briefcase, GraduationCap, Trophy, Target, Eye, Globe } from 'lucide-react';
 import { experienceData, educationData, contactInfo } from '../../data/portfolio';
+import yongwooProfile from '../../assets/yongwoo_profile_car.png';
 
 const AboutCard = ({ onAsk }: { onAsk?: (question: string) => void }) => {
     return (
@@ -13,12 +14,9 @@ const AboutCard = ({ onAsk }: { onAsk?: (question: string) => void }) => {
                 className="w-full max-w-[380px] min-h-[520px] relative rounded-[40px] overflow-hidden shadow-[0_20px_40px_rgba(0,0,0,0.12)] group mx-auto"
             >
                 <img
-                    src="/src/assets/yongwoo_profile_car.png"
+                    src={yongwooProfile}
                     alt="Yongwoo Kim"
                     className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                    onError={(e) => {
-                        (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2000&auto=format&fit=crop";
-                    }}
                 />
 
                 {/* Artistic Gradient Overlay */}
@@ -34,12 +32,9 @@ const AboutCard = ({ onAsk }: { onAsk?: (question: string) => void }) => {
                         <div className="relative">
                             <div className="w-10 h-10 rounded-full border-2 border-white/20 bg-white/10 backdrop-blur-md overflow-hidden">
                                 <img
-                                    src="/src/assets/yongwoo_profile_car.png"
+                                    src={yongwooProfile}
                                     alt="Avatar"
                                     className="w-full h-full object-cover opacity-90"
-                                    onError={(e) => {
-                                        (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2000&auto=format&fit=crop";
-                                    }}
                                 />
                             </div>
                             <div className="absolute bottom-0 right-0 w-2.5 h-2.5 bg-green-500 border-2 border-black rounded-full" />
