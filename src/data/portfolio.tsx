@@ -16,7 +16,7 @@ export const allProjects: Project[] = [
         tools: ["Figma", "Rive", "Cursor", "Jupyter Notebook", "Photoshop", "Illustrator"],
         role: "UX/UI Designer (AI Widget System & Quantitative Validation)",
         confidential: true,
-        confidentialNotice: "This project involves a highly sensitive investigative system linked to national security. Due to strict NDA obligations, actual UI/UX screenshots are prohibited. All visual materials have been reconstructed to explain the design logic.",
+        confidentialNotice: "To respect Non-Disclosure Agreements (NDA), original project assets have been reconstructed to illustrate the design logic and methodology. Consequently, the visuals shown here may differ from the actual production environment.",
         overview: "Integrating a first-of-its-kind AI chat engine into a complex intelligence dashboard.",
         collaboration: {
             myRole: "UX, Widget UI Design, Virtual Data Analysis (Led: AI Widget System Design & Quantitative UX Validation)",
@@ -384,6 +384,25 @@ export const allProjects: Project[] = [
         tools: ["SwiftUI", "Apple CryptoKit", "Local Auth", "Figma"],
         role: "iOS Developer & Designer",
         overview: "A standalone iOS security app designed for maximum privacy. Unlike cloud-based password managers, Secret Pocket ensures Zero-Knowledge architecture by storing data *only* on the local device with military-grade encryption.",
+        challenge: "In an era of cloud dependency, users are increasingly concerned about data leaks and privacy violations. The challenge was to build a security app that never compromises on privacy while maintaining an intuitive, non-intimidating user experience.",
+        collaboration: {
+            myRole: "Solo Developer & Designer (Full ownership of product vision, development, and App Store launch)",
+            teams: [
+                { name: "Solo Project", contribution: "Designed and developed the entire application from concept to App Store launch, including security architecture, UI/UX, and marketing materials." }
+            ]
+        },
+        strategy: {
+            goals: [
+                { title: "Zero-Knowledge Security", desc: "Ensure all sensitive data stays on-device with military-grade encryption." },
+                { title: "User Sovereignty", desc: "Give users absolute control over their data without cloud dependencies." },
+                { title: "Accessible Security", desc: "Make strong security intuitive and approachable for non-technical users." }
+            ],
+            hypotheses: [
+                { title: "Privacy First", desc: "Users will trust a local-only solution more than cloud-based password managers." },
+                { title: "Hardware Security", desc: "Leveraging Apple's Secure Enclave will provide superior protection over software-only solutions." },
+                { title: "Simple UX", desc: "A card-based, friendly interface will reduce security anxiety and increase adoption." }
+            ]
+        },
         implementation: [
             {
                 title: "CHAPTER 1: Native Security & Zero-Cloud Architecture",
@@ -428,6 +447,27 @@ export const allProjects: Project[] = [
         tools: ["Figma", "Notion", "Multi-Armed Bandit Concept", "Design Systems"],
         role: "Product Manager & Lead Designer",
         overview: "A ranking system based on AI algorithms that connects advertisers and marketers, ranking revenue-based ROAS to create the most efficient marketing plans. As both PM and Lead Designer, I orchestrated the lifecycle from algorithm conceptualization (Multi-Armed Bandit) to a scalable design system implemented across 40+ screens.",
+        challenge: "B2B advertisers struggled with inefficient manual campaign optimization across multiple platforms (Google, Facebook, Naver). The challenge was to create an AI-driven system that automates campaign recommendations while remaining transparent and controllable for marketing professionals.",
+        collaboration: {
+            myRole: "Product Manager & Lead Designer (Led product strategy, design system, and cross-team coordination)",
+            teams: [
+                { name: "Data Science Team", contribution: "Developed Multi-Armed Bandit algorithm and ROAS prediction models." },
+                { name: "Web Development Team", contribution: "Implemented frontend/backend infrastructure and API integrations with ad platforms." },
+                { name: "Business Team", contribution: "Defined market requirements and coordinated client feedback loops." }
+            ]
+        },
+        strategy: {
+            goals: [
+                { title: "AI-Driven Efficiency", desc: "Automate campaign optimization using Multi-Armed Bandit algorithms." },
+                { title: "Dual-User Architecture", desc: "Serve both advertisers (monitoring) and marketers (execution) seamlessly." },
+                { title: "Scalable Design System", desc: "Build reusable components for rapid expansion to 40+ screens." }
+            ],
+            hypotheses: [
+                { title: "Algorithm Transparency", desc: "Showing AI reasoning will increase trust and adoption among B2B users." },
+                { title: "Unified Platform", desc: "Consolidating multi-platform campaigns into one dashboard will drastically reduce workflow friction." },
+                { title: "Design-Dev Sync", desc: "1:1 property mapping between Figma and code will accelerate implementation." }
+            ]
+        },
         implementation: [
             {
                 title: "CHAPTER 1: Project Architecture & Multi-Armed Bandit",
@@ -488,6 +528,25 @@ export const allProjects: Project[] = [
         role: "Maker (AI Assistance)",
         overview: "An experimental 'Vibe Coding' project exploring how ancient Eastern philosophy (Saju) can be reinterpreted through modern Data UX and Generative AI. This project modernizes 'Fortune Telling' into a sophisticated self-reflection tool, stripping away superstition to focus on psychological archetypes.",
         previewUrl: "https://innerfive.web.app/",
+        challenge: "Ancient Eastern philosophy texts are difficult to interpret and inaccessible to modern audiences. The challenge was to use AI to translate archaic Saju concepts into contemporary psychological insights while creating an immersive, visually stunning experience.",
+        collaboration: {
+            myRole: "Solo Maker (Full-stack development with AI assistance using Cursor and Midjourney)",
+            teams: [
+                { name: "AI-Assisted Development", contribution: "Used Cursor AI for code generation and Midjourney for visual asset creation, demonstrating the power of 'Vibe Coding' workflows." }
+            ]
+        },
+        strategy: {
+            goals: [
+                { title: "Modernize Ancient Wisdom", desc: "Translate archaic Eastern philosophy into accessible psychological archetypes." },
+                { title: "Generative Aesthetics", desc: "Create immersive visual experiences using Midjourney-generated tarot-style assets." },
+                { title: "AI-Native Workflow", desc: "Demonstrate rapid prototyping using AI coding assistants and generative art tools." }
+            ],
+            hypotheses: [
+                { title: "Psychological Framing", desc: "Reframing fortune-telling as self-reflection will appeal to modern, rational audiences." },
+                { title: "Visual Immersion", desc: "Generative art will create a mystical, engaging experience that bridges ancient and modern aesthetics." },
+                { title: "Vibe Coding Speed", desc: "AI-assisted development can dramatically accelerate prototype-to-production timelines." }
+            ]
+        },
         implementation: [
             {
                 title: "CHAPTER 1: Modernizing Archaic Texts with AI",
@@ -521,6 +580,26 @@ export const allProjects: Project[] = [
         tools: ["Adobe XD", "Photoshop", "After Effects", "Illustrator"],
         role: "UI/UX Designer",
         overview: "Citroen was working on a project to present a new driver experience using autonomous driving technology and smartwatches. I proposed a new gesture control design using a smartwatch.",
+        challenge: "As autonomous driving removes traditional steering controls, the challenge was to reimagine driver interaction using wearable devices. How can gesture control through a smartwatch provide intuitive, safe, and engaging control of an autonomous vehicle?",
+        collaboration: {
+            myRole: "UI/UX Designer (Led gesture interaction design and smartwatch interface development)",
+            teams: [
+                { name: "Citroën ProLab Paris", contribution: "Provided autonomous driving technology frameworks and brand guidelines." },
+                { name: "Design Team", contribution: "Collaborated on motion logic and visual language for wearable integration." }
+            ]
+        },
+        strategy: {
+            goals: [
+                { title: "Intuitive Gestures", desc: "Design natural hand movements that control vehicle functions without learning curve." },
+                { title: "Wearable Integration", desc: "Seamlessly connect smartwatch UI with autonomous vehicle systems." },
+                { title: "Safety & Engagement", desc: "Maintain driver attention while ensuring safety in autonomous mode." }
+            ],
+            hypotheses: [
+                { title: "Natural Interaction", desc: "Gesture-based control will feel more natural than touchscreen interfaces in autonomous vehicles." },
+                { title: "Wearable Advantage", desc: "Smartwatches provide always-available, context-aware control without visual distraction." },
+                { title: "Autonomous Engagement", desc: "Interactive gestures will keep drivers engaged and confident in autonomous systems." }
+            ]
+        },
         implementation: [
             {
                 title: "CHAPTER 1: Vision of Autonomous Interaction",
@@ -573,6 +652,27 @@ export const allProjects: Project[] = [
         tools: ["After Effects", "Adobe XD", "Cinema 4D", "Illustrator"],
         role: "HMI & Motion Designer",
         overview: "Participated in the SKODA Vision E project, conceptualizing various scenarios to enhance the driving experience for autonomous vehicles. I designed and proposed a motion design language that aligns with Skoda's brand identity, reimagining the cabin as a digital lifestyle hub.",
+        challenge: "Autonomous vehicles transform cars from transportation tools into lifestyle spaces. The challenge was to reimagine the dashboard as an interactive lifestyle platform while maintaining Skoda's 'Simply Clever' brand philosophy through motion design.",
+        collaboration: {
+            myRole: "HMI & Motion Designer (Designed motion language, location-based services, and lifestyle hub concepts)",
+            teams: [
+                { name: "SKODA Design Team", contribution: "Provided brand guidelines and Vision E concept direction." },
+                { name: "Motion Design Team", contribution: "Collaborated on kinetic brand identity and animation systems." },
+                { name: "UX Team", contribution: "Defined user scenarios and service integration strategies." }
+            ]
+        },
+        strategy: {
+            goals: [
+                { title: "Lifestyle Hub", desc: "Transform the dashboard into an interactive canvas for entertainment, commerce, and information." },
+                { title: "Location-Aware Services", desc: "Deliver contextual local insights through the 'Touring On Trip' concierge." },
+                { title: "Motion Brand Identity", desc: "Define a kinetic design language that expresses Skoda's 'Simply Clever' philosophy." }
+            ],
+            hypotheses: [
+                { title: "Service Platform", desc: "Autonomous vehicles will become primary platforms for location-based service discovery." },
+                { title: "Journey Discovery", desc: "Transforming commutes into journeys of discovery will increase user engagement and satisfaction." },
+                { title: "Motion Storytelling", desc: "Kinetic design will make complex digital services feel intuitive and delightful." }
+            ]
+        },
         implementation: [
             {
                 title: "CHAPTER 1: Reimagining the Dashboard as a Lifestyle Hub",
