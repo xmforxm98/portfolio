@@ -360,12 +360,16 @@ export const allProjects: Project[] = [
                 layout: "full",
                 items: [
                     {
-                        title: "System Overview",
+                        title: "Dashboard",
                         image: "/images/ds1.png"
                     },
                     {
-                        title: "Final Implementation",
+                        title: "System Overview",
                         image: "/images/ds7.png"
+                    },
+                    {
+                        title: "Dashboard Builder",
+                        image: "/images/ds8.png"
                     }
                 ]
             }
