@@ -6,7 +6,7 @@ interface StrategyDiagramProps {
     strategy: {
         goals: { title: string; desc: string }[];
         hypotheses: { title?: string; desc: string }[];
-        solutions: string[];
+        solutions?: string[];
     };
     color?: string;
 }
@@ -67,32 +67,34 @@ const StrategyDiagram: React.FC<StrategyDiagramProps> = ({ strategy, color = "#f
             </div>
 
             {/* Tactical Solutions Row - Realigned to match requested image */}
-            <div className="flex flex-col items-center gap-8 w-full">
-                <div className="flex items-center gap-3">
-                    <div className="w-12 h-px bg-gray-200" />
-                    <span className="text-[10px] font-black uppercase tracking-[0.4em] text-gray-400">02.3 TACTICAL SOLUTIONS</span>
-                    <div className="w-12 h-px bg-gray-200" />
-                </div>
+            {strategy.solutions && strategy.solutions.length > 0 && (
+                <div className="flex flex-col items-center gap-8 w-full">
+                    <div className="flex items-center gap-3">
+                        <div className="w-12 h-px bg-gray-200" />
+                        <span className="text-[10px] font-black uppercase tracking-[0.4em] text-gray-400">02.3 TACTICAL SOLUTIONS</span>
+                        <div className="w-12 h-px bg-gray-200" />
+                    </div>
 
-                <div className="flex flex-col gap-3 w-full max-w-4xl px-4">
-                    {strategy.solutions.map((solution, i) => (
-                        <motion.div
-                            key={i}
-                            initial={{ opacity: 0, x: -20 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: i * 0.1 }}
-                            whileHover={{ scale: 1.01, x: 5 }}
-                            className="flex items-center gap-5 px-8 py-5 bg-white border border-black/[0.06] rounded-[48px] shadow-sm hover:shadow-md transition-all cursor-default group"
-                        >
-                            <div className="w-10 h-10 rounded-full bg-[#d9ff00] flex items-center justify-center text-black border border-black/5 shrink-0 group-hover:scale-110 transition-transform shadow-sm">
-                                <Check size={18} strokeWidth={3} />
-                            </div>
-                            <span className="text-[15px] font-bold text-gray-800 tracking-tight leading-snug">{solution}</span>
-                        </motion.div>
-                    ))}
+                    <div className="flex flex-col gap-3 w-full max-w-4xl px-4">
+                        {strategy.solutions.map((solution, i) => (
+                            <motion.div
+                                key={i}
+                                initial={{ opacity: 0, x: -20 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: i * 0.1 }}
+                                whileHover={{ scale: 1.01, x: 5 }}
+                                className="flex items-center gap-5 px-8 py-5 bg-white border border-black/[0.06] rounded-[48px] shadow-sm hover:shadow-md transition-all cursor-default group"
+                            >
+                                <div className="w-10 h-10 rounded-full bg-[#d9ff00] flex items-center justify-center text-black border border-black/5 shrink-0 group-hover:scale-110 transition-transform shadow-sm">
+                                    <Check size={18} strokeWidth={3} />
+                                </div>
+                                <span className="text-[15px] font-bold text-gray-800 tracking-tight leading-snug">{solution}</span>
+                            </motion.div>
+                        ))}
+                    </div>
                 </div>
-            </div>
+            )}
         </div>
     );
 };

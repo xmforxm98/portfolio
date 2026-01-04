@@ -1,6 +1,6 @@
 import React from 'react';
 import { allProjects, experienceData, educationData, contactInfo } from '../data/portfolio';
-import { Briefcase, Calendar, Target, PenTool, Layout, CheckCircle2, BarChart3, Search, Lightbulb, User2, Mail, Phone, MapPin, Linkedin, Award, GraduationCap, Globe, Layers, Zap } from 'lucide-react';
+import { Briefcase, Target, PenTool, Layout, CheckCircle2, BarChart3, Search, Lightbulb, User2, Mail, Phone, MapPin, Linkedin, Award, GraduationCap, Globe, Zap } from 'lucide-react';
 import yongwooProfile from '../assets/yongwoo_profile_car.png';
 
 const PortfolioExport: React.FC = () => {

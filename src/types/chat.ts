@@ -27,7 +27,7 @@ export interface Project {
     strategy?: {
         goals: { title: string; desc: string }[];
         hypotheses: { title: string; desc: string }[];
-        solutions: string[];
+        solutions?: string[];
     };
     implementation?: {
         title: string;
