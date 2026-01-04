@@ -28,6 +28,7 @@ const ProjectGallery: React.FC<ProjectGalleryProps> = ({
                             className={p.span}
                             dark={p.dark}
                             coverImage={p.coverImage}
+                            previewUrl={p.previewUrl}
                             onClick={() => onProjectClick(p)}
                         />
                     ))}

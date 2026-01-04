@@ -12,6 +12,7 @@ interface ProjectCardProps {
   height?: string;
   dark?: boolean;
   coverImage?: string;
+  previewUrl?: string;
   onClick?: () => void;
 }
 
@@ -24,6 +25,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   height = "420px",
   dark = true,
   coverImage,
+  previewUrl,
   onClick
 }) => {
   return (
@@ -109,7 +111,22 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             View Case Study <ArrowRight size={16} />
           </button>
 
-          <div className="flex gap-1.5">
+          {previewUrl && (
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                window.open(previewUrl, '_blank');
+              }}
+              className={cn(
+                "flex items-center gap-2 text-[12px] font-bold transition-transform hover:translate-x-1",
+                dark ? "text-amber-400" : "text-amber-600"
+              )}
+            >
+              Live Demo <ExternalLink size={14} />
+            </button>
+          )}
+
+          <div className="flex gap-1.5 ml-auto">
             <div className={cn("w-1 h-1 rounded-full", dark ? "bg-white/40" : "bg-black/20")} />
             <div className={cn("w-1 h-1 rounded-full", dark ? "bg-white/40" : "bg-black/20")} />
             <div className={cn("w-1 h-1 rounded-full", dark ? "bg-white/40" : "bg-black/20")} />

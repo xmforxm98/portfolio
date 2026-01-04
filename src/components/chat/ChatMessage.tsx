@@ -3,7 +3,8 @@ import { motion } from 'framer-motion';
 import {
     ArrowUpRight,
     Mail,
-    Linkedin
+    Linkedin,
+    ExternalLink
 } from 'lucide-react';
 import type { Message } from '../../types/chat';
 import { cn } from '../../lib/utils';
@@ -109,6 +110,18 @@ const ChatMessage: React.FC<ChatMessageProps> = ({ msg, onProjectClick }) => {
                                         <p className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-1.5">{p.category}</p>
                                         <h4 className="text-[17px] font-black text-[#1a1a1a] tracking-tight">{p.title}</h4>
                                     </div>
+                                    {p.previewUrl && (
+                                        <div
+                                            onClick={(e) => {
+                                                e.stopPropagation();
+                                                window.open(p.previewUrl, '_blank');
+                                            }}
+                                            className="w-10 h-10 rounded-full border border-black/5 flex items-center justify-center text-amber-500 hover:bg-amber-50 transition-all shrink-0 shadow-sm"
+                                            title="Live Demo"
+                                        >
+                                            <ExternalLink size={18} />
+                                        </div>
+                                    )}
                                 </motion.div>
                             ))}
                         </div>
@@ -199,6 +212,18 @@ const ChatMessage: React.FC<ChatMessageProps> = ({ msg, onProjectClick }) => {
                                         </div>
                                         <h4 className="text-[17px] font-black text-[#1a1a1a] tracking-tight">{msg.data.title}</h4>
                                     </div>
+                                    {msg.data.previewUrl && (
+                                        <div
+                                            onClick={(e) => {
+                                                e.stopPropagation();
+                                                window.open(msg.data.previewUrl, '_blank');
+                                            }}
+                                            className="w-10 h-10 rounded-full border border-black/5 flex items-center justify-center text-amber-500 hover:bg-amber-50 transition-all shrink-0 shadow-sm"
+                                            title="Live Demo"
+                                        >
+                                            <ExternalLink size={18} />
+                                        </div>
+                                    )}
                                 </motion.div>
                             )}
                         </div>

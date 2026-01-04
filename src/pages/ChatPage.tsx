@@ -679,8 +679,22 @@ const ChatPage: React.FC = () => {
                                                                     <span className={`px-3 py-1 rounded-full text-[9px] font-black uppercase tracking-widest ${p.dark ? 'bg-white/10 text-white/90 group-hover:bg-white/20' : 'bg-black/5 text-black/60 group-hover:bg-black/10'} backdrop-blur-md transition-colors`}>
                                                                         {p.tag}
                                                                     </span>
-                                                                    <div className={`w-8 h-8 rounded-full flex items-center justify-center backdrop-blur-md opacity-0 group-hover:opacity-100 transition-all duration-300 translate-x-4 group-hover:translate-x-0 ${p.dark ? 'bg-white/10 text-white' : 'bg-black/5 text-black'}`}>
-                                                                        <ArrowUpRight size={16} />
+                                                                    <div className="flex gap-2">
+                                                                        {p.previewUrl && (
+                                                                            <div
+                                                                                onClick={(e) => {
+                                                                                    e.stopPropagation();
+                                                                                    window.open(p.previewUrl, '_blank');
+                                                                                }}
+                                                                                className={`w-8 h-8 rounded-full flex items-center justify-center backdrop-blur-md opacity-0 group-hover:opacity-100 transition-all duration-300 translate-x-4 group-hover:translate-x-0 ${p.dark ? 'bg-white/10 text-amber-400' : 'bg-black/5 text-amber-600'}`}
+                                                                                title="Live Demo"
+                                                                            >
+                                                                                <ExternalLink size={16} />
+                                                                            </div>
+                                                                        )}
+                                                                        <div className={`w-8 h-8 rounded-full flex items-center justify-center backdrop-blur-md opacity-0 group-hover:opacity-100 transition-all duration-300 translate-x-4 group-hover:translate-x-0 ${p.dark ? 'bg-white/10 text-white' : 'bg-black/5 text-black'}`}>
+                                                                            <ArrowUpRight size={16} />
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                                 <div>

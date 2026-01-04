@@ -305,6 +305,7 @@ export const allProjects: Project[] = [
         span: "md:col-span-1",
         dark: true,
         coverImage: "/images/ds1.png",
+        previewUrl: "https://dashboardbu-cjysu473j-xmforxm98s-projects.vercel.app",
         duration: "6 Months (Internal Tool)",
         tools: ["Figma Variables", "React", "D3.js", "Storybook"],
         role: "Lead Product Designer (Design System)",
